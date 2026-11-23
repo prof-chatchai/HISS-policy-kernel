@@ -8,7 +8,7 @@ authors:
   - family-names: Tritham
     given-names: Chatchai
   - family-names: Tritham
-    given-names: Chatrabhron
+    given-names: Chattabhorn
   - family-names: Kitchawee
     given-names: Supotchamarn
 abstract: "Deterministic scripts that evaluate a minimum-necessary access-policy kernel over its full input space (73,440 requests) against seven safety properties and a utility criterion, with baselines, mutation analysis, a Z3 cross-check, a Hypothesis baseline and a Cedar/OPA differential check. Synthetic data only."

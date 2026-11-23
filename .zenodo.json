@@ -4,7 +4,7 @@
   "description": "Deterministic scripts that evaluate a minimum-necessary access-policy kernel over its full input space (73,440 requests) against seven safety properties and a utility criterion, with baselines, mutation analysis, a Z3 cross-check, a Hypothesis baseline and a Cedar/OPA differential check. Synthetic data only.",
   "creators": [
     {"name": "Tritham, Chatchai"},
-    {"name": "Tritham, Chatrabhron"},
+    {"name": "Tritham, Chattabhorn"},
     {"name": "Kitchawee, Supotchamarn"}
   ],
   "license": "MIT",
