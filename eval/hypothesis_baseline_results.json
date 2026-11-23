@@ -1,0 +1,136 @@
+{
+ "hypothesis_version": "6.168.0",
+ "seeds": 100,
+ "n_targets": 71,
+ "budgets": {
+  "10": {
+   "hypothesis": {
+    "defect_found_seeds": 33,
+    "defect_found_pct": 33.0,
+    "median_first_hit_draw": 6,
+    "hand_mutants_mean_of_10": 3.29,
+    "config_mutants_mean_of_60": 1.34,
+    "hand_min_max": [
+     1,
+     6
+    ],
+    "config_min_max": [
+     0,
+     6
+    ]
+   },
+   "uniform": {
+    "defect_found_seeds": 47,
+    "defect_found_pct": 47.0,
+    "median_first_hit_draw": 4,
+    "hand_mutants_mean_of_10": 3.55,
+    "config_mutants_mean_of_60": 1.63,
+    "hand_min_max": [
+     0,
+     6
+    ],
+    "config_min_max": [
+     0,
+     7
+    ]
+   }
+  },
+  "50": {
+   "hypothesis": {
+    "defect_found_seeds": 98,
+    "defect_found_pct": 98.0,
+    "median_first_hit_draw": 15,
+    "hand_mutants_mean_of_10": 5.31,
+    "config_mutants_mean_of_60": 4.68,
+    "hand_min_max": [
+     3,
+     8
+    ],
+    "config_min_max": [
+     1,
+     12
+    ]
+   },
+   "uniform": {
+    "defect_found_seeds": 97,
+    "defect_found_pct": 97.0,
+    "median_first_hit_draw": 11,
+    "hand_mutants_mean_of_10": 5.55,
+    "config_mutants_mean_of_60": 6.92,
+    "hand_min_max": [
+     3,
+     8
+    ],
+    "config_min_max": [
+     1,
+     16
+    ]
+   }
+  },
+  "100": {
+   "hypothesis": {
+    "defect_found_seeds": 100,
+    "defect_found_pct": 100.0,
+    "median_first_hit_draw": 15,
+    "hand_mutants_mean_of_10": 6.49,
+    "config_mutants_mean_of_60": 9.27,
+    "hand_min_max": [
+     4,
+     8
+    ],
+    "config_min_max": [
+     2,
+     18
+    ]
+   },
+   "uniform": {
+    "defect_found_seeds": 100,
+    "defect_found_pct": 100.0,
+    "median_first_hit_draw": 12,
+    "hand_mutants_mean_of_10": 6.68,
+    "config_mutants_mean_of_60": 12.99,
+    "hand_min_max": [
+     4,
+     9
+    ],
+    "config_min_max": [
+     3,
+     23
+    ]
+   }
+  },
+  "1000": {
+   "hypothesis": {
+    "defect_found_seeds": 100,
+    "defect_found_pct": 100.0,
+    "median_first_hit_draw": 17,
+    "hand_mutants_mean_of_10": 9.07,
+    "config_mutants_mean_of_60": 49.34,
+    "hand_min_max": [
+     7,
+     10
+    ],
+    "config_min_max": [
+     40,
+     56
+    ]
+   },
+   "uniform": {
+    "defect_found_seeds": 100,
+    "defect_found_pct": 100.0,
+    "median_first_hit_draw": 12,
+    "hand_mutants_mean_of_10": 9.46,
+    "config_mutants_mean_of_60": 53.84,
+    "hand_min_max": [
+     8,
+     10
+    ],
+    "config_min_max": [
+     47,
+     60
+    ]
+   }
+  }
+ },
+ "empty_kill_sets": []
+}

@@ -1,0 +1,15 @@
+cff-version: 1.2.0
+message: "If you use this software, please cite it using these metadata."
+title: "HISS policy-kernel verification package (exhaustive, SMT, mutation, property-based and Cedar/OPA differential checks)"
+version: 1.0.0
+date-released: 2026-11-23
+license: MIT
+authors:
+  - family-names: Tritham
+    given-names: Chatchai
+  - family-names: Tritham
+    given-names: Chatrabhron
+  - family-names: Kitchawee
+    given-names: Supotchamarn
+abstract: "Deterministic scripts that evaluate a minimum-necessary access-policy kernel over its full input space (73,440 requests) against seven safety properties and a utility criterion, with baselines, mutation analysis, a Z3 cross-check, a Hypothesis baseline and a Cedar/OPA differential check. Synthetic data only."
+keywords: [privacy-by-design, access-control, break-glass, mutation-testing, SMT, health-informatics]

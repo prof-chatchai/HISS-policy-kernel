@@ -1,0 +1,33 @@
+{
+  "WP2 kernel": {
+    "unsafe_exists": true,
+    "unsafe_count": 4032,
+    "per_property": {
+      "P1": 0,
+      "P2": 4032,
+      "P3": 0,
+      "P4": 0,
+      "P5": 768,
+      "P6": 768,
+      "P7": 0
+    },
+    "utility_proved": true,
+    "seconds": 17.96
+  },
+  "WP2 kernel + break-glass fix": {
+    "unsafe_exists": false,
+    "unsafe_count": 0,
+    "per_property": {
+      "P1": 0,
+      "P2": 0,
+      "P3": 0,
+      "P4": 0,
+      "P5": 0,
+      "P6": 0,
+      "P7": 0
+    },
+    "utility_proved": true,
+    "seconds": 0.05
+  },
+  "agrees_with_exhaustive": true
+}

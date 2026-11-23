@@ -1,0 +1,3 @@
+OPA v1.22.4 windows amd64 static (opa_windows_amd64.exe) -> bin/opa.exe
+SHA-256 4cd179b95041aa50c44241324da3becf35d0b28dca92bf10a07f32d002724d5e (matches official .sha256 asset)
+cedarpy 4.12.2

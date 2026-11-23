@@ -1,0 +1,82 @@
+{
+  "rows": [
+    {
+      "fields": 8,
+      "requests": 73440,
+      "unsafe_defect": 4032,
+      "unsafe_fixed": 0,
+      "exhaustive_s_defect": 0.03,
+      "exhaustive_s_fixed": 0.02,
+      "smt_finds_defect": true,
+      "smt_s_defect": 0.028,
+      "smt_proves_fixed_safe": true,
+      "smt_s_fixed": 0.015
+    },
+    {
+      "fields": 10,
+      "requests": 294624,
+      "unsafe_defect": 16128,
+      "unsafe_fixed": 0,
+      "exhaustive_s_defect": 0.09,
+      "exhaustive_s_fixed": 0.09,
+      "smt_finds_defect": true,
+      "smt_s_defect": 0.018,
+      "smt_proves_fixed_safe": true,
+      "smt_s_fixed": 0.015
+    },
+    {
+      "fields": 12,
+      "requests": 1179360,
+      "unsafe_defect": 64512,
+      "unsafe_fixed": 0,
+      "exhaustive_s_defect": 0.42,
+      "exhaustive_s_fixed": 0.32,
+      "smt_finds_defect": true,
+      "smt_s_defect": 0.017,
+      "smt_proves_fixed_safe": true,
+      "smt_s_fixed": 0.016
+    },
+    {
+      "fields": 14,
+      "requests": 4718304,
+      "unsafe_defect": 258048,
+      "unsafe_fixed": 0,
+      "exhaustive_s_defect": 1.26,
+      "exhaustive_s_fixed": 1.31,
+      "smt_finds_defect": true,
+      "smt_s_defect": 0.022,
+      "smt_proves_fixed_safe": true,
+      "smt_s_fixed": 0.02
+    },
+    {
+      "fields": 16,
+      "requests": 18874080,
+      "unsafe_defect": 1032192,
+      "unsafe_fixed": 0,
+      "exhaustive_s_defect": 7.19,
+      "exhaustive_s_fixed": 6.41,
+      "smt_finds_defect": true,
+      "smt_s_defect": 0.02,
+      "smt_proves_fixed_safe": true,
+      "smt_s_fixed": 0.018
+    },
+    {
+      "fields": 18,
+      "requests": 75497184,
+      "unsafe_defect": 4128768,
+      "unsafe_fixed": 0,
+      "exhaustive_s_defect": 27.31,
+      "exhaustive_s_fixed": 24.82,
+      "smt_finds_defect": true,
+      "smt_s_defect": 0.027,
+      "smt_proves_fixed_safe": true,
+      "smt_s_fixed": 0.028
+    }
+  ],
+  "seconds_per_request": 3.2875398372474397e-07,
+  "extrapolated_seconds_exhaustive": {
+    "20": 99,
+    "24": 1588,
+    "32": 406652
+  }
+}

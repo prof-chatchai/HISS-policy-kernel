@@ -1,0 +1,461 @@
+{
+  "input_space": 73440,
+  "roles": 6,
+  "purposes": 6,
+  "field_subsets": 255,
+  "suite10_pass": 10,
+  "equivalence_mismatches_vs_original": 0,
+  "timing_one_exhaustive_pass_s": 0.19,
+  "python": "3.11.15",
+  "machine": "AMD64",
+  "deciders": {
+    "WP2 kernel": {
+      "requests": 73440,
+      "requested_fields": 294912,
+      "granted_fields": 16128,
+      "withheld_pct": 94.53,
+      "unsafe_requests": 4032,
+      "unsafe_pct": 5.49,
+      "violations": {
+        "P2_breakglass_by_nonclinical_role": 4032,
+        "P5_identifier_to_research": 768,
+        "P6_excess_context_to_ai": 768
+      },
+      "first_example": {
+        "P2_breakglass_by_nonclinical_role": {
+          "role": "guardian",
+          "purpose": "treatment_surgery",
+          "requested": [
+            "identity"
+          ],
+          "authority": true,
+          "current": true,
+          "emergency": true,
+          "granted": [
+            "identity"
+          ]
+        },
+        "P5_identifier_to_research": {
+          "role": "researcher",
+          "purpose": "treatment_surgery",
+          "requested": [
+            "identity"
+          ],
+          "authority": true,
+          "current": true,
+          "emergency": true,
+          "granted": [
+            "identity"
+          ]
+        },
+        "P6_excess_context_to_ai": {
+          "role": "ai_service",
+          "purpose": "treatment_surgery",
+          "requested": [
+            "operative_note"
+          ],
+          "authority": true,
+          "current": true,
+          "emergency": true,
+          "granted": [
+            "operative_note"
+          ]
+        }
+      },
+      "per_threat": {
+        "T09": 4032,
+        "T05": 768,
+        "T07": 768
+      },
+      "legit_routine": 1312,
+      "served_routine": 1312,
+      "legit_emergency": 4032,
+      "served_emergency": 4032
+    },
+    "WP2 kernel + break-glass fix": {
+      "requests": 73440,
+      "requested_fields": 294912,
+      "granted_fields": 9216,
+      "withheld_pct": 96.88,
+      "unsafe_requests": 0,
+      "unsafe_pct": 0.0,
+      "violations": {},
+      "first_example": {},
+      "per_threat": {},
+      "legit_routine": 1312,
+      "served_routine": 1312,
+      "legit_emergency": 4032,
+      "served_emergency": 4032
+    },
+    "RBAC whole record": {
+      "requests": 73440,
+      "requested_fields": 294912,
+      "granted_fields": 294912,
+      "withheld_pct": 0.0,
+      "unsafe_requests": 68800,
+      "unsafe_pct": 93.682,
+      "violations": {
+        "P1_stale_or_revoked_authority": 55080,
+        "P4_field_beyond_purpose": 35520,
+        "P3_role_purpose_mismatch_grant": 30600,
+        "P2_breakglass_by_nonclinical_role": 18360,
+        "P5_identifier_to_research": 10752,
+        "P6_excess_context_to_ai": 10752
+      },
+      "first_example": {
+        "P1_stale_or_revoked_authority": {
+          "role": "surgeon",
+          "purpose": "treatment_surgery",
+          "requested": [
+            "identity"
+          ],
+          "authority": true,
+          "current": false,
+          "emergency": false,
+          "granted": [
+            "identity"
+          ]
+        },
+        "P4_field_beyond_purpose": {
+          "role": "surgeon",
+          "purpose": "treatment_surgery",
+          "requested": [
+            "speech_assessment"
+          ],
+          "authority": true,
+          "current": true,
+          "emergency": false,
+          "granted": [
+            "speech_assessment"
+          ]
+        },
+        "P3_role_purpose_mismatch_grant": {
+          "role": "surgeon",
+          "purpose": "treatment_speech",
+          "requested": [
+            "identity"
+          ],
+          "authority": true,
+          "current": true,
+          "emergency": false,
+          "granted": [
+            "identity"
+          ]
+        },
+        "P2_breakglass_by_nonclinical_role": {
+          "role": "guardian",
+          "purpose": "treatment_surgery",
+          "requested": [
+            "identity"
+          ],
+          "authority": true,
+          "current": true,
+          "emergency": true,
+          "granted": [
+            "identity"
+          ]
+        },
+        "P5_identifier_to_research": {
+          "role": "researcher",
+          "purpose": "treatment_surgery",
+          "requested": [
+            "identity"
+          ],
+          "authority": true,
+          "current": true,
+          "emergency": false,
+          "granted": [
+            "identity"
+          ]
+        },
+        "P6_excess_context_to_ai": {
+          "role": "ai_service",
+          "purpose": "treatment_surgery",
+          "requested": [
+            "facial_image"
+          ],
+          "authority": true,
+          "current": true,
+          "emergency": false,
+          "granted": [
+            "facial_image"
+          ]
+        }
+      },
+      "per_threat": {
+        "T02": 55080,
+        "T10": 55080,
+        "T03": 36520,
+        "T08": 30600,
+        "T09": 18360,
+        "T05": 10752,
+        "T07": 10752
+      },
+      "legit_routine": 1312,
+      "served_routine": 50,
+      "legit_emergency": 4032,
+      "served_emergency": 126
+    },
+    "RBAC role scope": {
+      "requests": 73440,
+      "requested_fields": 294912,
+      "granted_fields": 110592,
+      "withheld_pct": 62.5,
+      "unsafe_requests": 57536,
+      "unsafe_pct": 78.344,
+      "violations": {
+        "P1_stale_or_revoked_authority": 47232,
+        "P3_role_purpose_mismatch_grant": 26240,
+        "P4_field_beyond_purpose": 14336,
+        "P2_breakglass_by_nonclinical_role": 14976
+      },
+      "first_example": {
+        "P1_stale_or_revoked_authority": {
+          "role": "surgeon",
+          "purpose": "treatment_surgery",
+          "requested": [
+            "identity"
+          ],
+          "authority": true,
+          "current": false,
+          "emergency": false,
+          "granted": [
+            "identity"
+          ]
+        },
+        "P3_role_purpose_mismatch_grant": {
+          "role": "surgeon",
+          "purpose": "treatment_speech",
+          "requested": [
+            "identity"
+          ],
+          "authority": true,
+          "current": true,
+          "emergency": false,
+          "granted": [
+            "identity"
+          ]
+        },
+        "P4_field_beyond_purpose": {
+          "role": "surgeon",
+          "purpose": "treatment_speech",
+          "requested": [
+            "facial_image"
+          ],
+          "authority": true,
+          "current": true,
+          "emergency": false,
+          "granted": [
+            "facial_image"
+          ]
+        },
+        "P2_breakglass_by_nonclinical_role": {
+          "role": "guardian",
+          "purpose": "treatment_surgery",
+          "requested": [
+            "identity"
+          ],
+          "authority": true,
+          "current": true,
+          "emergency": true,
+          "granted": [
+            "identity"
+          ]
+        }
+      },
+      "per_threat": {
+        "T02": 47232,
+        "T10": 47232,
+        "T03": 26240,
+        "T08": 26240,
+        "T09": 14976
+      },
+      "legit_routine": 1312,
+      "served_routine": 1312,
+      "legit_emergency": 4032,
+      "served_emergency": 1248
+    },
+    "Consent/authority only": {
+      "requests": 73440,
+      "requested_fields": 294912,
+      "granted_fields": 73728,
+      "withheld_pct": 75.0,
+      "unsafe_requests": 13720,
+      "unsafe_pct": 18.682,
+      "violations": {
+        "P4_field_beyond_purpose": 8880,
+        "P3_role_purpose_mismatch_grant": 7650,
+        "P2_breakglass_by_nonclinical_role": 4590,
+        "P5_identifier_to_research": 2688,
+        "P6_excess_context_to_ai": 2688
+      },
+      "first_example": {
+        "P4_field_beyond_purpose": {
+          "role": "surgeon",
+          "purpose": "treatment_surgery",
+          "requested": [
+            "speech_assessment"
+          ],
+          "authority": true,
+          "current": true,
+          "emergency": false,
+          "granted": [
+            "speech_assessment"
+          ]
+        },
+        "P3_role_purpose_mismatch_grant": {
+          "role": "surgeon",
+          "purpose": "treatment_speech",
+          "requested": [
+            "identity"
+          ],
+          "authority": true,
+          "current": true,
+          "emergency": false,
+          "granted": [
+            "identity"
+          ]
+        },
+        "P2_breakglass_by_nonclinical_role": {
+          "role": "guardian",
+          "purpose": "treatment_surgery",
+          "requested": [
+            "identity"
+          ],
+          "authority": true,
+          "current": true,
+          "emergency": true,
+          "granted": [
+            "identity"
+          ]
+        },
+        "P5_identifier_to_research": {
+          "role": "researcher",
+          "purpose": "treatment_surgery",
+          "requested": [
+            "identity"
+          ],
+          "authority": true,
+          "current": true,
+          "emergency": false,
+          "granted": [
+            "identity"
+          ]
+        },
+        "P6_excess_context_to_ai": {
+          "role": "ai_service",
+          "purpose": "treatment_surgery",
+          "requested": [
+            "facial_image"
+          ],
+          "authority": true,
+          "current": true,
+          "emergency": false,
+          "granted": [
+            "facial_image"
+          ]
+        }
+      },
+      "per_threat": {
+        "T03": 9130,
+        "T08": 7650,
+        "T09": 4590,
+        "T05": 2688,
+        "T07": 2688
+      },
+      "legit_routine": 1312,
+      "served_routine": 50,
+      "legit_emergency": 4032,
+      "served_emergency": 126
+    },
+    "Deny all": {
+      "requests": 73440,
+      "requested_fields": 294912,
+      "granted_fields": 0,
+      "withheld_pct": 100.0,
+      "unsafe_requests": 0,
+      "unsafe_pct": 0.0,
+      "violations": {},
+      "first_example": {},
+      "per_threat": {},
+      "legit_routine": 1312,
+      "served_routine": 0,
+      "legit_emergency": 4032,
+      "served_emergency": 0
+    }
+  },
+  "mutation": {
+    "M1_no_authority_check": {
+      "killed_by_suite10": true,
+      "killed_by_exhaustive": true
+    },
+    "M2_no_role_purpose_check": {
+      "killed_by_suite10": true,
+      "killed_by_exhaustive": true
+    },
+    "M3_no_minimisation": {
+      "killed_by_suite10": true,
+      "killed_by_exhaustive": true
+    },
+    "M4_breakglass_unbounded": {
+      "killed_by_suite10": true,
+      "killed_by_exhaustive": true
+    },
+    "M5_research_gets_identity": {
+      "killed_by_suite10": true,
+      "killed_by_exhaustive": true
+    },
+    "M6_ai_gets_full_record": {
+      "killed_by_suite10": true,
+      "killed_by_exhaustive": true
+    },
+    "M7_breakglass_before_authority": {
+      "killed_by_suite10": false,
+      "killed_by_exhaustive": true
+    },
+    "M8_role_check_clinicians_only": {
+      "killed_by_suite10": false,
+      "killed_by_exhaustive": true
+    },
+    "M9_dental_purpose_allows_photo": {
+      "killed_by_suite10": false,
+      "killed_by_exhaustive": true
+    },
+    "M10_speech_purpose_allows_family": {
+      "killed_by_suite10": false,
+      "killed_by_exhaustive": true
+    }
+  },
+  "sensitivity_without_P2": {
+    "WP2 kernel": 1536,
+    "WP2 kernel + break-glass fix": 0
+  },
+  "config_mutation": {
+    "n": 60,
+    "killed_by_suite10": 8,
+    "killed_by_exhaustive": 60,
+    "n_purpose_allow": 30,
+    "n_role_purpose": 30,
+    "survivors_exhaustive": []
+  },
+  "random_sampling_n95": 54,
+  "suite10_hit_prob_if_random": 0.431,
+  "stratum_nonclinical_emergency": {
+    "n": 4032,
+    "unsafe": 4032
+  },
+  "pairwise": {
+    "total_pairs": 120,
+    "suite10_pairs_covered": 54,
+    "suite10_covers_nonclinical_emergency": false,
+    "covering_array_size": 36,
+    "covering_array_finds_defect": true,
+    "covering_array_kills_hand": 8,
+    "covering_array_kills_config": 45
+  },
+  "suite10_property_oracle": {
+    "finds_defect": false,
+    "kills_hand": 5,
+    "kills_config": 8
+  }
+}

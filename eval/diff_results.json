@@ -1,0 +1,215 @@
+{
+ "n": 73440,
+ "seconds": 39.0,
+ "pairs": {
+  "orig_vs_cedar": {
+   "disagreements": 6720,
+   "by_stratum": {
+    "clinical|emg|auth_ok": 3360,
+    "nonclinical|emg|auth_ok": 3360
+   },
+   "examples": [
+    {
+     "role": "surgeon",
+     "purpose": "treatment_speech",
+     "req": [
+      "identity"
+     ],
+     "auth": true,
+     "cur": true,
+     "emg": true,
+     "a": [
+      "identity"
+     ],
+     "b": []
+    },
+    {
+     "role": "surgeon",
+     "purpose": "treatment_speech",
+     "req": [
+      "cleft_dx"
+     ],
+     "auth": true,
+     "cur": true,
+     "emg": true,
+     "a": [
+      "cleft_dx"
+     ],
+     "b": []
+    },
+    {
+     "role": "surgeon",
+     "purpose": "treatment_speech",
+     "req": [
+      "operative_note"
+     ],
+     "auth": true,
+     "cur": true,
+     "emg": true,
+     "a": [
+      "operative_note"
+     ],
+     "b": []
+    }
+   ]
+  },
+  "orig_vs_rego": {
+   "disagreements": 6720,
+   "by_stratum": {
+    "clinical|emg|auth_ok": 3360,
+    "nonclinical|emg|auth_ok": 3360
+   },
+   "examples": [
+    {
+     "role": "surgeon",
+     "purpose": "treatment_speech",
+     "req": [
+      "identity"
+     ],
+     "auth": true,
+     "cur": true,
+     "emg": true,
+     "a": [
+      "identity"
+     ],
+     "b": []
+    },
+    {
+     "role": "surgeon",
+     "purpose": "treatment_speech",
+     "req": [
+      "cleft_dx"
+     ],
+     "auth": true,
+     "cur": true,
+     "emg": true,
+     "a": [
+      "cleft_dx"
+     ],
+     "b": []
+    },
+    {
+     "role": "surgeon",
+     "purpose": "treatment_speech",
+     "req": [
+      "operative_note"
+     ],
+     "auth": true,
+     "cur": true,
+     "emg": true,
+     "a": [
+      "operative_note"
+     ],
+     "b": []
+    }
+   ]
+  },
+  "fixed_vs_cedar": {
+   "disagreements": 4032,
+   "by_stratum": {
+    "clinical|emg|auth_ok": 3360,
+    "nonclinical|emg|auth_ok": 672
+   },
+   "examples": [
+    {
+     "role": "surgeon",
+     "purpose": "treatment_speech",
+     "req": [
+      "identity"
+     ],
+     "auth": true,
+     "cur": true,
+     "emg": true,
+     "a": [
+      "identity"
+     ],
+     "b": []
+    },
+    {
+     "role": "surgeon",
+     "purpose": "treatment_speech",
+     "req": [
+      "cleft_dx"
+     ],
+     "auth": true,
+     "cur": true,
+     "emg": true,
+     "a": [
+      "cleft_dx"
+     ],
+     "b": []
+    },
+    {
+     "role": "surgeon",
+     "purpose": "treatment_speech",
+     "req": [
+      "operative_note"
+     ],
+     "auth": true,
+     "cur": true,
+     "emg": true,
+     "a": [
+      "operative_note"
+     ],
+     "b": []
+    }
+   ]
+  },
+  "fixed_vs_rego": {
+   "disagreements": 4032,
+   "by_stratum": {
+    "clinical|emg|auth_ok": 3360,
+    "nonclinical|emg|auth_ok": 672
+   },
+   "examples": [
+    {
+     "role": "surgeon",
+     "purpose": "treatment_speech",
+     "req": [
+      "identity"
+     ],
+     "auth": true,
+     "cur": true,
+     "emg": true,
+     "a": [
+      "identity"
+     ],
+     "b": []
+    },
+    {
+     "role": "surgeon",
+     "purpose": "treatment_speech",
+     "req": [
+      "cleft_dx"
+     ],
+     "auth": true,
+     "cur": true,
+     "emg": true,
+     "a": [
+      "cleft_dx"
+     ],
+     "b": []
+    },
+    {
+     "role": "surgeon",
+     "purpose": "treatment_speech",
+     "req": [
+      "operative_note"
+     ],
+     "auth": true,
+     "cur": true,
+     "emg": true,
+     "a": [
+      "operative_note"
+     ],
+     "b": []
+    }
+   ]
+  },
+  "cedar_vs_rego": {
+   "disagreements": 0,
+   "by_stratum": {},
+   "examples": []
+  }
+ }
+}
